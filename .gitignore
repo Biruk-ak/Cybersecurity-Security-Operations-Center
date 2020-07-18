@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+*.o
+*.a
+.env
+.env.local
+coverage/
+.DS_Store
+*.log
+.terraform/
+terraform.tfstate*
+__pycache__/
+_bootstrap_history.py

@@ -1,0 +1,2 @@
+import React from 'react';
+export const TimeRangePicker: React.FC<{value:{from:Date;to:Date}; onChange:(v:{from:Date;to:Date})=>void}> = ({value,onChange}) => (<div><button type='button' onClick={()=>onChange({from:new Date(Date.now()-3600e3),to:new Date()})}>1h</button><button type='button' onClick={()=>onChange({from:new Date(Date.now()-86400e3),to:new Date()})}>24h</button><span>{value.from.toLocaleString()} → {value.to.toLocaleString()}</span></div>);

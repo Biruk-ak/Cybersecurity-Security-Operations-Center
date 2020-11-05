@@ -1,0 +1,3 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE TABLE tenants(id UUID PRIMARY KEY DEFAULT uuid_generate_v4(), name VARCHAR(256) UNIQUE NOT NULL, slug VARCHAR(128) UNIQUE NOT NULL, status VARCHAR(32) DEFAULT 'active', created_at TIMESTAMPTZ DEFAULT NOW());
+CREATE TABLE users(id UUID PRIMARY KEY DEFAULT uuid_generate_v4(), tenant_id UUID REFERENCES tenants(id), email VARCHAR(320) NOT NULL, display_name VARCHAR(256) NOT NULL, UNIQUE(tenant_id,email));

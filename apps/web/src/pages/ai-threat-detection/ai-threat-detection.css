@@ -1,0 +1,2 @@
+.ai-threat-detection-page{padding:1.5rem;background:linear-gradient(160deg,#0b1220,#121a2b);color:#e8eef7;min-height:100%}
+.ai-threat-detection-page .soc-metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}

@@ -1,0 +1,5 @@
+syntax="proto3";
+package soc.identity;
+service IdentityService { rpc GetUser(GetUserRequest) returns (User); }
+message User { string id=1; string email=2; }
+message GetUserRequest { string id=1; }

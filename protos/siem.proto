@@ -1,0 +1,6 @@
+syntax="proto3";
+package soc.siem;
+service SiemService { rpc ListAlerts(ListAlertsRequest) returns (ListAlertsResponse); }
+message Alert { string id=1; uint32 severity=2; }
+message ListAlertsRequest { string tenant_id=1; }
+message ListAlertsResponse { repeated Alert items=1; }

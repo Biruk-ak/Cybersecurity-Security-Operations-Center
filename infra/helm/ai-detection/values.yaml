@@ -1,0 +1,6 @@
+replicaCount: 3
+image:
+  repository: ghcr.io/biruk-ak/soc-ai-detection
+  tag: "1.0.0"
+service:
+  port: 8080

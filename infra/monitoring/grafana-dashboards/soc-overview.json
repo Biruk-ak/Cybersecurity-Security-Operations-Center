@@ -1,0 +1,4 @@
+{
+  "title": "SOC Platform Overview",
+  "panels": [{"title":"Alerts/min"},{"title":"Ingest lag"},{"title":"Open incidents"}]
+}

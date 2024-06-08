@@ -1,0 +1,148 @@
+openapi: 3.0.3
+info:
+  title: SOC Platform Public API
+  version: 1.2.0
+  contact:
+    name: Biruk-ak
+    email: birukaklilu0110@gmail.com
+paths:
+  /v1/iam:
+    get:
+      summary: List Identity & Access Management
+      responses:
+        '200': { description: OK }
+  /v1/sso:
+    get:
+      summary: List Single Sign-On
+      responses:
+        '200': { description: OK }
+  /v1/mfa:
+    get:
+      summary: List Multi-Factor Authentication
+      responses:
+        '200': { description: OK }
+  /v1/pam:
+    get:
+      summary: List Privileged Access Management
+      responses:
+        '200': { description: OK }
+  /v1/siem:
+    get:
+      summary: List SIEM
+      responses:
+        '200': { description: OK }
+  /v1/soar:
+    get:
+      summary: List SOAR
+      responses:
+        '200': { description: OK }
+  /v1/edr:
+    get:
+      summary: List Endpoint Detection & Response
+      responses:
+        '200': { description: OK }
+  /v1/threat-intel:
+    get:
+      summary: List Threat Intelligence
+      responses:
+        '200': { description: OK }
+  /v1/vuln-scanner:
+    get:
+      summary: List Vulnerability Scanner
+      responses:
+        '200': { description: OK }
+  /v1/asset-discovery:
+    get:
+      summary: List Asset Discovery
+      responses:
+        '200': { description: OK }
+  /v1/compliance:
+    get:
+      summary: List Compliance Management
+      responses:
+        '200': { description: OK }
+  /v1/incident-response:
+    get:
+      summary: List Incident Response
+      responses:
+        '200': { description: OK }
+  /v1/risk-assessment:
+    get:
+      summary: List Risk Assessment
+      responses:
+        '200': { description: OK }
+  /v1/audit-logging:
+    get:
+      summary: List Audit Logging
+      responses:
+        '200': { description: OK }
+  /v1/device-management:
+    get:
+      summary: List Device Management
+      responses:
+        '200': { description: OK }
+  /v1/certificate-management:
+    get:
+      summary: List Certificate Management
+      responses:
+        '200': { description: OK }
+  /v1/api-security:
+    get:
+      summary: List API Security
+      responses:
+        '200': { description: OK }
+  /v1/cloud-security:
+    get:
+      summary: List Cloud Security Monitoring
+      responses:
+        '200': { description: OK }
+  /v1/k8s-security:
+    get:
+      summary: List Kubernetes Security
+      responses:
+        '200': { description: OK }
+  /v1/network-monitoring:
+    get:
+      summary: List Network Monitoring
+      responses:
+        '200': { description: OK }
+  /v1/firewall-management:
+    get:
+      summary: List Firewall Management
+      responses:
+        '200': { description: OK }
+  /v1/security-policies:
+    get:
+      summary: List Security Policies
+      responses:
+        '200': { description: OK }
+  /v1/dlp:
+    get:
+      summary: List Data Loss Prevention
+      responses:
+        '200': { description: OK }
+  /v1/encryption:
+    get:
+      summary: List Encryption Management
+      responses:
+        '200': { description: OK }
+  /v1/ai-threat-detection:
+    get:
+      summary: List AI Threat Detection
+      responses:
+        '200': { description: OK }
+  /v1/security-analytics:
+    get:
+      summary: List Security Analytics
+      responses:
+        '200': { description: OK }
+  /v1/reporting:
+    get:
+      summary: List Reporting
+      responses:
+        '200': { description: OK }
+  /v1/executive-dashboard:
+    get:
+      summary: List Executive Dashboard
+      responses:
+        '200': { description: OK }

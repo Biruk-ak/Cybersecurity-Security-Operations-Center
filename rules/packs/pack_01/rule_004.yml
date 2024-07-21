@@ -1,0 +1,7 @@
+id: rule-01-004
+name: Detection 1-4
+severity: 5
+mitre: [T1004]
+query: |
+  source=endpoint | where severity >= 5
+actions: [create_alert, enrich_threat_intel, notify_soar]

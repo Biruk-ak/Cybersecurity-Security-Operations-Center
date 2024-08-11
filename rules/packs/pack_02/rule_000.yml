@@ -1,0 +1,7 @@
+id: rule-02-000
+name: Detection 2-0
+severity: 1
+mitre: [T1000]
+query: |
+  source=endpoint | where severity >= 1
+actions: [create_alert, enrich_threat_intel, notify_soar]

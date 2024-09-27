@@ -1,0 +1,7 @@
+id: rule-04-002
+name: Detection 4-2
+severity: 3
+mitre: [T1002]
+query: |
+  source=endpoint | where severity >= 3
+actions: [create_alert, enrich_threat_intel, notify_soar]

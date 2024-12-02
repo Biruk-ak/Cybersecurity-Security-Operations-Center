@@ -1,0 +1,7 @@
+id: rule-07-007
+name: Detection 7-7
+severity: 8
+mitre: [T1007]
+query: |
+  source=endpoint | where severity >= 3
+actions: [create_alert, enrich_threat_intel, notify_soar]

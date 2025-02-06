@@ -1,0 +1,7 @@
+id: rule-10-008
+name: Detection 10-8
+severity: 9
+mitre: [T1008]
+query: |
+  source=endpoint | where severity >= 4
+actions: [create_alert, enrich_threat_intel, notify_soar]
